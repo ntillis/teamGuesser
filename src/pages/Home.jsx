@@ -93,7 +93,6 @@ function Home() {
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Enter team name"
         />
-        <button type="submit" className="search-button">Submit</button>
       </form>
       <ClueGrid />
     </div>

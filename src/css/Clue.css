@@ -16,7 +16,7 @@
 
 .guess-row {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+  grid-template-columns: 175px 175px 175px 175px 175px 175px 175px 175px;
   gap: 1rem;
   width: 80%; /* Account for margins */
   margin: 1rem 2rem; /* Uniform margins */

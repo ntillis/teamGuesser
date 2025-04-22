@@ -7,6 +7,7 @@ function NavBar () {
                 <h2>Team Guesser</h2>
             </div>
             <div className="navbar-links">
+                <h3>Leaderboard</h3>
                 <h3>Help</h3>
                 <h3>Settings</h3>
             </div>

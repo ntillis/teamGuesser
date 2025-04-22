@@ -14,8 +14,9 @@ function ClueGrid() {
         { header: 'Last Champs', field: 'lChamps'},
         { header: '# Champs', field: 'champs'},
         { header: 'Last Championship App.', field: 'lcga'},
-        { header: 'Div. Champs Since 1990', field: 'confChamps90'},
-        { header: 'Last Playoff App.', field: 'lpa'}
+        { header: 'Last Playoff App.', field: 'lpa'},
+        { header: 'Primary Color', field: 'pColor'},
+        { header: 'Secondary Color', field: 'sColor'}    
     ];
 
     return (
