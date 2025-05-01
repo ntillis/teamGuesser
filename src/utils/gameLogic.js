@@ -2,6 +2,9 @@ const rules = {
     league: {
         type: 'exact'
     },
+    division: {
+        type: 'exact'
+    },
     firstSeason: {
         type: 'range',
         range: 20
@@ -13,10 +16,6 @@ const rules = {
     champs: {
         type:'range',
         range: 2
-    },
-    lcga: {
-        type: 'range',
-        range: 5
     },
     lpa: {
         type: 'range',
@@ -57,7 +56,7 @@ export const gradeGuess = (guess, answer) => {
         const answerValue = answer[field]
         let distance = null;
 
-        if (!answerValue) {
+        if (answerValue == null) {
             if (answerValue == guessValue) {
                 results[field] = {
                     color: '#6AAA64',
@@ -89,7 +88,7 @@ export const gradeGuess = (guess, answer) => {
             case 'range':
                 if (guessValue == answerValue) {
                     color = '#6AAA64';
-                } else if (!guessValue) {
+                } else if (guessValue == null) {
                     color = '#787C7E';
                     break;
                 } else if (Math.abs(guessValue - answerValue) <= rule.range) {
@@ -119,7 +118,7 @@ export const gradeGuess = (guess, answer) => {
         }
 
         let value = guess[field];
-        if (!guess[field]) value = 'Never'
+        if (guess[field] == null) value = 'Never'
 
         results[field] = {
             color: color,

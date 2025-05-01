@@ -1,4 +1,4 @@
-import "../css/Clue.css";
+import "../css/Main.css";
 
 function ClueCard({ clue }) {
   const isHexColor = /^#([0-9A-F]{3}){1,2}$/i.test(clue.value);

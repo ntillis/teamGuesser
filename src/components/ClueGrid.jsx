@@ -1,27 +1,13 @@
 import ClueCard from './ClueCard';
-import ClueHeaders from './ClueHeaders';
 import { useGuessContext } from '../contexts/GuessContext';
-import "../css/Clue.css";
+import "../css/Main.css";
 
 function ClueGrid() {
 
     const {guessHistory} = useGuessContext();
 
-
-    const displayConfig = [
-        { header: 'League', field: 'league' },
-        { header: '1st Season', field: 'firstSeason'},
-        { header: 'Last Champs', field: 'lChamps'},
-        { header: '# Champs', field: 'champs'},
-        { header: 'Last Championship App.', field: 'lcga'},
-        { header: 'Last Playoff App.', field: 'lpa'},
-        { header: 'Primary Color', field: 'pColor'},
-        { header: 'Secondary Color', field: 'sColor'}    
-    ];
-
     return (
         <div className="clue-grid">
-            <ClueHeaders headers={displayConfig} />
             <div>
                 {guessHistory.map((guess, index) => (
                     <div key={index} className="guesses">
